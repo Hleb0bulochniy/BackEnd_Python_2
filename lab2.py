@@ -12,6 +12,8 @@ def main():
     conversion_operators()
     print("операторы циклов и условий")
     conditions_and_cycles(10)
+    print("функция")
+    print (person_info("Ivan", company = "Microsoft"))
 
 
 def types():
@@ -181,5 +183,10 @@ def conditions_and_cycles(amount):
     print()
     #оператор in
 
+
+def person_info(name, /, age = 21, *, company):
+    '''Функция возвращает ифнормацию о человеке в виде строки'''
+    return f"name: {name}, age: {age}, company {company}"
+    #с помощью / и * можно указать тип параметров
 
 main()
